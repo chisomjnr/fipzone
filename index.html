@@ -17,6 +17,7 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
+
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   
@@ -49,25 +50,27 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link active" data-nav-link>Homepage</a>
+            <a href="index.html" class="navbar-link active" data-nav-link>Homepage</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link" data-nav-link>About Page</a>
+            <a href="about.html" class="navbar-link" data-nav-link>About Page</a>
+          </li>
+
+        
+
+          <li class="navbar-item">
+            <a href="getstarted.html" class="navbar-link" data-nav-link>Get Started</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link" data-nav-link>Markets</a>
+            <a href="404.html" class="navbar-link" data-nav-link>Blog</a>
           </li>
+
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link" data-nav-link>Fip Games</a>
+            <a href="contact.html" class="navbar-link" data-nav-link>Contact Us</a>
           </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link" data-nav-link>Blog</a>
-          </li>
-
      
 
         </ul>
@@ -79,7 +82,7 @@
         <span class="line line-3"></span>
       </button>
 
-      <a href="#" class="btn btn-outline"><strong style="font-weight: 510;" id="xo">Join Our</strong> <strong>Telegram</strong> <i class="fas fa-paper-plane"></i></a>
+      <a href="login.html" class="btn btn-outline"><strong>Login</strong> <strong style="font-weight: 510;" id="xo">or Signup</strong>  </a>
 
     </div>
   </header>
@@ -100,22 +103,23 @@
 
           <div class="hero-content">
 
-            <h1 class="h1 hero-title">Tap, Swap, Done. The <strong style="   background: linear-gradient(45deg, orange, orange);
+            <h1 class="h1 hero-title">Earn, Redeem & Advertise on <strong style="   background: linear-gradient(45deg, orange, orange);
               -webkit-background-clip: text; /* Clip the text to the background */
               color: transparent; 
-              text-shadow: 0 2px 70px rgba(255, 191, 0, 0.615);" >Simplest Way</strong> to Trade.</h1>
+              text-shadow: 0 2px 70px rgba(255, 191, 0, 0.615);" >FipZone</strong> Today.</h1>
 
 
 
 
             <p class="hero-text">
-              Welcome to <strong>FipZone</strong>, your trading made effortless—just tap, swap, and you're done. Experience seamless exchanges with zero hassle, all in one simple platform..
+             <strong> The Easiest Way to Turn Time into Rewards.</strong>
+              Welcome to Fipcoin where your efforts translate directly into value—earn coins, redeem for real money, or advertise effortlessly. Experience a seamless platform where tasks turn into rewards and opportunities, all in just a few taps.
             </p>
 
             <style>
               .button-container {
     display: flex;
-    gap: 10px; /* Adjust the gap between the buttons */
+    gap: 20px; /* Adjust the gap between the buttons */
 }
 
 .button-container .btnn {
@@ -124,9 +128,9 @@
     text-align: center;
     text-decoration: none;
     color: rgb(0, 0, 0); /* Adjust color as needed */
-    background-color: #ffffff; /* Adjust background color as needed */
+    background-color: #ffffff00; /* Adjust background color as needed */
     border: 3px solid black;
-    border-radius: 50px; /* Rounded corners */
+    border-radius: 10px; /* Rounded corners */
     transition: b 0.3s ease; /* Smooth transition on hover */
 }
 
@@ -138,8 +142,8 @@
             </style>
 
             <div class="button-container">
-              <a id="xo" href="#about" class="btnn btn-primary">Learn More <i class="fas fa-arrow-down"></i></a>
-              <a href="#" class="btn btn-primary">Get Started Now <i class="fas fa-arrow-right"></i></a>
+              <a id="xo" href="#about" class="btnn btn-primary">Explore Features<i style="margin-left: 7px;" class="fas fa-arrow-down"></i></a>
+              <a href="getstarted.html" class="btn btn-primary">Start Earning Today <i style="margin-left: 7px;" class="fas fa-arrow-right"></i></a>
           </div>
           
 
@@ -148,7 +152,7 @@
           </div>
 
           <figure class="hero-banner">
-            <img src="./assets/images/hero-banner.png" width="570" height="448" alt="hero banner" class="w-100">
+            <img src="./assets/images/3-removebg-preview.png" width="570" height="448" alt="hero banner" class="w-100">
           </figure>
 
         </div>
@@ -159,41 +163,6 @@
 
 
 
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-  const tabButtons = document.querySelectorAll('.tab-btnn');
-  const tabContentItems = document.querySelectorAll('.tab-content > li');
-
-  tabButtons.forEach(button => {
-    button.addEventListener('click', function () {
-      // Remove active class from all buttons
-      tabButtons.forEach(btn => btn.classList.remove('active'));
-
-      // Add active class to the clicked button
-      this.classList.add('active');
-
-      // Get the associated tab content
-      const tab = this.textContent.trim();
-      tabContentItems.forEach(item => {
-        if (item.getAttribute('data-tab') === tab) {
-          item.classList.add('active');
-        } else {
-          item.classList.remove('active');
-        }
-      });
-    });
-  });
-});
-
-</script>
-
-
-
-      <!-- 
-        - #TREND
-      -->
-
       <section class="section trend" aria-label="crypto trend" data-section>
         <div class="container">
 
@@ -202,124 +171,106 @@
             <ul class="tab-nav">
 
               <li>
-                <button class="tab-btn"><h2 style="font-family: poppins;" class="section-title">Market Trends</h2></button>
-                
-              </li>
-          
-              <li>
-                <button  class="tab-btn tab-btnn active">Crypto</button>
+                <h2 style="color: #000000; font-family: poppins;font-size: 38px;">Our Stats</h2>
               </li>
 
-              <li>
-                <button  class="tab-btn tab-btnn">DeFi</button>
-              </li>
-
-              <li>
-                <button class="tab-btn tab-btnn">BSC</button>
-              </li>
-
-              <li>
            
-                <a id="xo" style="position: absolute; right:60px; font-size: 18px;" href="" class="tab-btn">View More Currencies <i style="color: orange; margin-left: 8px;" class="fas fa-arrow-right"></i></a>
-              </li>
 
-              <!-- <li>
-                <button class="tab-btn">Metaverse</button>
-              </li>
-
-              <li>
-                <button class="tab-btn">Polkadot</button>
-              </li> -->
 
             </ul>
+
             <ul class="tab-content">
 
-              <!-- Crypto Tab Content -->
-              <li class="trend-card active" data-tab="Crypto">
-                <!-- Bitcoin -->
+              <li>
                 <div class="trend-card">
+
                   <div class="card-title-wrapper">
-                    <img src="./assets/images/coin-1.svg" width="24" height="24" alt="bitcoin logo">
-                    <a href="#" class="card-title">Bitcoin <span class="span">BTC/USD</span></a>
+           
+
+                    <a href="#" class="card-title">
+                      Total of
+                    </a>
                   </div>
-                  <data class="card-value" value="46168.95">USD 46,168.95</data>
+
+                  <data class="card-value" value="46168.95">1000+</data>
+
                   <div class="card-analytics">
-                    <data class="current-price" value="36641.20">36,641.20</data>
-                    <div class="badge red">-0.79%</div>
+                    <data class="current-price" value="36641.20">Active Users</data>
+
                   </div>
+
                 </div>
-                
-             
-            
-              <!-- DeFi Tab Content -->
-              <li class="trend-card" data-tab="DeFi">
-                <div class="trend-card">
-                  <div class="card-title-wrapper">
-                    <img src="./assets/images/coin-3.svg" width="24" height="24" alt="tether logo">
-                    <a href="#" class="card-title">Tether <span class="span">USDT/USD</span></a>
-                  </div>
-                  <data class="card-value" value="1.00">USD 1.00</data>
-                  <div class="card-analytics">
-                    <data class="current-price" value="36641.20">36,641.20</data>
-                    <div class="badge red">-0.01%</div>
-                  </div>
-                </div>
-                <!-- Add more DeFi coins here -->
-              </li>
-            
-              <!-- BSC Tab Content -->
-              <li class="trend-card" data-tab="BSC">
-                <div class="trend-card">
-                  <div class="card-title-wrapper">
-                    <img src="./assets/images/coin-4.svg" width="24" height="24" alt="bnb logo">
-                    <a href="#" class="card-title">BNB <span class="span">BNB/USD</span></a>
-                  </div>
-                  <data class="card-value" value="443.56">USD 443.56</data>
-                  <div class="card-analytics">
-                    <data class="current-price" value="36641.20">36,641.20</data>
-                    <div class="badge red">-1.24%</div>
-                  </div>
-                </div>
-                <!-- Add more BSC coins here -->
               </li>
 
-                 <!-- Ethereum -->
-                 <li class="trend-card" data-tab="Crypto">
-                 <div class="trend-card">
+              <li>
+                <div class="trend-card">
+
                   <div class="card-title-wrapper">
-                    <img src="./assets/images/coin-2.svg" width="24" height="24" alt="ethereum logo">
-                    <a href="#" class="card-title">Ethereum <span class="span">ETH/USD</span></a>
+           
+
+                    <a href="#" class="card-title">
+                      Total of
+                    </a>
                   </div>
-                  <data class="card-value" value="3480.04">USD 3,480.04</data>
+
+                  <data class="card-value" value="46168.95">100+</data>
+
                   <div class="card-analytics">
-                    <data class="current-price" value="36641.20">36,641.20</data>
-                    <div class="badge green">+10.55%</div>
+                    <data class="current-price" value="36641.20">Updated Tasks</data>
+
                   </div>
+
                 </div>
               </li>
-              
-              <!-- Add more tab content blocks here -->
-              
+
+              <li>
+                <div class="trend-card">
+
+                  <div class="card-title-wrapper">
+           
+
+                    <a href="#" class="card-title">
+                      Estimated
+                    </a>
+                  </div>
+
+                  <data class="card-value" value="46168.95">98.8%+</data>
+
+                  <div class="card-analytics">
+                    <data class="current-price" value="36641.20">Use Satisfaction</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="trend-card">
+
+                  <div class="card-title-wrapper">
+           
+
+                    <a href="#" class="card-title">
+                      Guaranteed
+                    </a>
+                  </div>
+
+                  <data class="card-value" value="46168.95">100%</data>
+
+                  <div class="card-analytics">
+                    <data class="current-price" value="36641.20">Cashback</data>
+
+                  </div>
+
+                </div>
+              </li>
+
             </ul>
-            
 
           </div>
-
+<div id="about"></div>
         </div>
-   
       </section>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -346,10 +297,10 @@
 
           <div class="about-content">
 
-            <h2 class="h2 section-title">What Is FipZone?</h2>
+            <h2 class="h2 section-title">What Is <strong style="color: #7f1cc1;">FipZone</strong>?</h2>
 
             <p class="section-text">
-              FipZone is a relatively new Telegram-based crypto game that operates on The Open Network (TON) blockchain. While it hasn't yet reached the popularity of similar platforms like TapSwap, FipZone offers users the opportunity to earn $FIP coins through simple in-game activities, such as tapping on the screen.
+              FipZone is a platform designed to maximize user engagement and earning potentials.
             </p>
 
             <ul class="section-list">
@@ -358,11 +309,11 @@
                 <div class="title-wrapper">
                   <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
 
-                  <h3 class="h3 list-title">Value Generation through Gameplay</h3>
+                  <h3 class="h3 list-title">Turn Your Free Time into Real Money</h3>
                 </div>
 
                 <p style="line-height: 1.7;" class="item-text">
-                  FipZone offers a "play – generate value – earn" model, where players can create value through their gameplay, which is then distributed as rewards. 
+                  FipCoin is your go-to platform for earning rewards while having fun. Whether you're a student, a part-time worker, or just someone looking to make the most of your free time, FipCoin lets you earn $FIP coins by completing simple, enjoyable tasks right from your phone or laptop. It’s not just about work—it's about turning your downtime into cash!
                 </p>
               </li>
 
@@ -370,17 +321,17 @@
                 <div class="title-wrapper">
                   <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
 
-                  <h3 class="h3 list-title">Early Entry Advantage</h3>
+                  <h3 class="h3 list-title">Earn While You Play</h3>
                 </div>
 
                 <p style="line-height: 1.7;" class="item-text">
-                  As FipZone is still in its early stages and not as popular as other platforms, joining now provides a unique opportunity to be an early adopter. 
+                  FipCoin is built on a “tap, play, earn” model that’s as simple as it sounds. Complete tasks, tap your way through fun in-game activities, and watch your $FIP coins stack up. Redeem them for real cash via your account or PayPal, or use your coins to promote your own gigs or ads within the app. It’s the easiest way to generate value while you kick back and relax.
                 </p>
               </li>
 
             </ul>
 
-            <a href="#" class="btn btn-primary">Explore More</a>
+            <a href="about.html" class="btn btn-primary">Learn More</a>
 
           </div>
 
@@ -389,6 +340,94 @@
 
 
 
+
+      <section class="section instruction" aria-label="instruction" data-section>
+        <div class="container">
+
+          <h2 class="h2 section-title">What People Are <br id="xo"> Saying About <strong style="   background: linear-gradient(45deg, orange, orange);
+            -webkit-background-clip: text; /* Clip the text to the background */
+            color: transparent; 
+            text-shadow: 0 2px 80px rgba(255, 191, 0, 0);" >FipZone</strong>.</h2>
+
+          <p class="section-text">
+           FipZone has been able to offer services to over 1k+ people and here's what some had to say:
+          </p>
+        </div>
+
+
+
+<section class="body">
+
+  <div class="wrapper">
+    <div class="box">
+      <i class="fas fa-quote-left quote"></i>
+      <p>“I make us of the Fipzone platform everywhere and anytime when I have free time at least for one hour a day. It’s good to use this platform in my free time to gain new skills. I use money I earned online in Fipzone for my personal purchases.”</p>
+      <div class="content">
+        <div class="info">
+          <div class="name">Steven Opara</div>
+          <div class="job">Designer | Developer</div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./assets/images/IG @cacurry_.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <i class="fas fa-quote-left quote"></i>
+      <p>“It’s motivating to get paid for something that I&nbsp;like. I like it that there are different kinds of tests and different topics, you’re never bored. I&nbsp;earn&nbsp;extra money with Fipzone for half an hour or&nbsp;one hour a day. I usually happens on&nbsp;my way to&nbsp; at home.”</p>
+      <div class="content">
+        <div class="info">
+          <div class="name">Adaise Munachi</div>
+          <div class="job">YouTuber | Blogger</div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./assets/images/728f5928-f644-467d-9f79-c91dd3cc48fd.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <i class="fas fa-quote-left  quote"></i>
+      <p>“With Fipzone I’ve learned the way the companies are&nbsp;using AI. The platform is easy to&nbsp;use. For me, it’s a simple way to connect and&nbsp;make extra money. Take&nbsp;your time to learn and&nbsp;improve your skills and find the tasks you are good at.”</p>
+      <div class="content">
+        <div class="info">
+          <div class="name">Oluwatobi Biodun</div>
+          <div class="job">Freelancer | Advertiser</div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./assets/images/04307a96-5af1-47db-b627-29792ce9d737.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+
+
+</section>
+   
 
 
 
@@ -399,101 +438,118 @@
 
 
       <!-- 
-        - #INSTRUCTION
+        - #APP
       -->
 
-      <section class="section instruction" aria-label="instruction" data-section>
+      <section class="section app" aria-label="app" data-section>
         <div class="container">
 
-          <h2 class="h2 section-title">How It Works</h2>
+          <div class="app-content">
 
-          <p class="section-text">
-            Want to get started with FipZone? Well you can do that with just 4 easy and simple steps.
-          </p>
+            <h2 class="h2 section-title">Why  <strong style="color: #7f1cc1;">FipZone</strong>?</h2>
 
-          <ul class="instruction-list">
+            <p class="section-text">
+              Here are some reasons why we believe joing FipZone would be an awesome idea
+            </p>
 
-            <li>
-              <div class="instruction-card">
+            <ul class="section-list">
 
-                <figure class="card-banner">
-                  <img src="./assets/images/3d-icon-social-media-app_23-2150049607-removebg-preview.png" width="96" height="96" loading="lazy" alt="Step 1"
-                    class="img">
-                </figure>
+              <li class="section-item">
+                <div class="title-wrapper">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
 
-                <p class="card-subtitle">Step 1</p>
+                  <h3 class="h3 item-title">We Offer Opportunities</h3>
+                </div>
 
-                <h3 class="h3 card-title">Join</h3>
-
-                <p class="card-text">
-                  Join our telegram community or signup to our platform online and get started.
+                <p class="item-text">
+                   Open to anyone, no special skills needed
                 </p>
+              </li>
 
-              </div>
-            </li>
+              <li class="section-item">
+                <div class="title-wrapper">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
 
-            <li>
-              <div class="instruction-card">
+                  <h3 class="h3 item-title">We Provide Flexibility</h3>
+                </div>
 
-                <figure class="card-banner">
-                  <img src="./assets/images/3d-render-black-hands-holding-electronic-devices-removebg-preview.png" width="96" height="96" loading="lazy" alt="Step 2"
-                    class="img">
-                </figure>
-
-                <p class="card-subtitle">Step 2</p>
-
-                <h3 class="h3 card-title">Tap Daily</h3>
-
-                <p class="card-text">
-                  Use our platform daily by tapping the fip coin and completing daily tasks & challenges.
+                <p class="item-text">
+                  Pick the tasks you like and monetize your free time
                 </p>
+              </li>
 
-              </div>
-            </li>
 
-            <li>
-              <div class="instruction-card">
+              <li class="section-item">
+                <div class="title-wrapper">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
 
-                <figure class="card-banner">
-                  <img src="./assets/images/gold-coins-falling-from-pile-money-man-hand-removebg-preview.png" width="96" height="96" loading="lazy" alt="Step 3"
-                    class="img">
-                </figure>
+                  <h3 class="h3 item-title">Motivation</h3>
+                </div>
 
-                <p class="card-subtitle">Step 3</p>
-
-                <h3 class="h3 card-title">Get Points</h3>
-
-                <p class="card-text">
-                  Get massive points & bonuses for all the activities you carry out on the platform.
+                <p class="item-text">
+                Develop your skills and unlock new tasks and rewards
                 </p>
+              </li>
 
-              </div>
-            </li>
 
-            <li>
-              <div class="instruction-card">
+              <!-- <li class="section-item">
+                <div class="title-wrapper">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
 
-                <figure class="card-banner">
-                  <img src="./assets/images/instruction-4.png" width="96" height="96" loading="lazy" alt="Step 4"
-                    class="img">
-                </figure>
+                  <h3 class="h3 item-title">Support</h3>
+                </div>
 
-                <p class="card-subtitle">Step 4</p>
-
-                <h3 class="h3 card-title">Earn Money</h3>
-
-                <p class="card-text">
-                  Convert these points to money and choose to trade or invest on the platform.
+                <p class="item-text">
+                   Our support team is here to guide you at every step
                 </p>
+              </li> -->
 
-              </div>
-            </li>
 
-          </ul>
+             
+
+            </ul>
+
+            <div class="app-wrapper">
+              <a href="#">
+                <img src="./assets/images/googleplay.png" width="135" height="40" loading="lazy"
+                  alt="get it on google play">
+              </a>
+
+              <a href="#">
+                <img src="./assets/images/appstore.png" width="120" height="40" loading="lazy"
+                  alt="download on the app store">
+              </a>
+            </div>
+
+          </div>
+
+          <div class="app-banner">
+            <img src="./assets/images/303,000+ Phone Template Pictures.jpeg" width="618" height="526" loading="lazy" alt="app banner"
+              class="w-100">
+
+            <span class="span">Coming Soon</span>
+          </div>
 
         </div>
       </section>
 
+    </article>
+  </main>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<br id="xo">
+<br id="xo">
+<br id="xo">
+<br id="xo">
 
 
 
@@ -505,11 +561,149 @@
 
 
 
+<section class="section instruction" aria-label="instruction" data-section>
+  <div class="wraperr">
+   
+    <h1>Frequently Asked Questions</h1>
+    
+    <p class="section-text">FipZone has been a topic for quite some time now,  Here are some FAQs of FipZone</p>
 
+    <div class="faq">
+      <button class="accordion">
+        Will I make real money online?
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          Yes, you get paid in US dollars (amongst other currencies) for completing online tasks. To withdraw money, you need to choose one of the withdrawal methods and register in the payment system. Don't try to withdraw money until you are sure that your account has been confirmed in the payment system.
+        </p>
+      </div>
+    </div>
 
+    <div class="faq">
+      <button class="accordion">
+        Do I need a diploma to earn money with FipZone?
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          You need no formal education and you learn as you go. What is really necessary to be a successful Toloker and earn more money online, is to concentrate and be careful. Read the instructions carefully, complete training tasks and grow skills.
+        </p>
+      </div>
+    </div>
 
+    <div class="faq">
+      <button class="accordion">
+        How to get more tasks and make more money?
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          The availability of tasks depends on your region, skills and the overall number of tasks created by the authors. Sometimes you can complete all the tasks available to you. In that case, just come back later for new tasks. Here are some easy tips to get more tasks and earn more extra money in FipZone.
+          <br>
+          <br>
+          1. Provide accurate information about yourself during the registration process
+          <br>
+          2. Take training tasks and exams that help you to get new skills and gain access to new projects
+          <br>
+          3.  Make sure you are careful and concentrate while performing tasks online
+        </p>
+      </div>
+    </div>
 
+    <div class="faq">
+      <button class="accordion">
+        Where is FipZone located?
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          FipZone is an African company. Our global headquarters is located in Nigeria. 
+        </p>
+      </div>
+    </div>
 
+    <div class="faq">
+      <button class="accordion">
+        What is FipZone’s key area of expertise?
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          We are the trusted data partner for all stages of AI development–from training to evaluation. FipZone has over a decade of experience supporting clients with its unique methodology and optimal combination of machine learning technology and human expertise. FipZone offers high quality expert data for training models at scale.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="accordion">
+        How does FipZone ensure the quality and accuracy of the data collected?
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          FipZone ensures the quality and accuracy of collected data through rigorous quality assurance measures–including multiple checks and verifications–to provide our clients with data that is reliable and accurate. Our unique quality control methodology includes built-in post-verification, dynamic overlaps, cross-validation, and golden sets.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="accordion">
+        What types of projects or tasks does FipZone typically handle?
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          FipZone provides high-quality data for each stage of large language model (LLM) and generative AI (GenAI) development as a managed service. We offer data for fine-tuning, RLHF, and evaluation. FipZone handles a diverse range of projects and tasks of any data type—text, image, audio, and video—showcasing our versatility and ability to cater to various client needs.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="accordion">
+        Is FipZone legit?
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          FipZone is a crowdsourcing platform that helps process large amounts of data by distributing tasks to a large number of people who do small tasks. Client companies, or requesters, create tasks on the FipZone platform and set the reward for them, while Tolokers choose tasks, complete them and earn money online. The task is paid when it’s completed correctly.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="accordion">
+        What are these online tasks all about?
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          You can help classify images, transcribe audio recordings, moderate comments, complete focus group surveys, and so on. The resulting data can be used for training machine learning algorithms, research, or other purposes.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        this.parentElement.classList.toggle("active");
+
+        var pannel = this.nextElementSibling;
+
+        if (pannel.style.display === "block") {
+          pannel.style.display = "none";
+        } else {
+          pannel.style.display = "block";
+        }
+      });
+    }
+  </script>
+</section>
 
 
 
@@ -518,15 +712,10 @@
         - #MARKET
       -->
 
-      <section class="section market" aria-label="market update" data-section>
+      <section style="display: none;" class="section market" aria-label="market update" data-section>
         <div class="container">
 
-          <div class="title-wrapper">
-         
-            <h2 class="h2 section-title">Daily Challenges           <p id="xo" style="color: grey; font-size: 16px; font-weight: 500; margin-top: 10px; line-height: 1.7;">Play our daily challenges and boost your earnings daily.</p></h2>
-
-            <a href="#" class="btn-link"><strong id="xo">Join & Play To</strong> View All <i style="margin-left: 8px; color: orange;" class="fas fa-arrow-right"></i></a>
-          </div>
+          
 
 
           <div class="market-tab">
@@ -572,7 +761,7 @@
 
                   <th class="table-heading"></th>
 
-                  <th class="table-heading" scope="col">#</th>
+                  <th class="table-heading" scope="col">Reason #</th>
 
                   <th class="table-heading" scope="col">Task</th>
 
@@ -685,177 +874,7 @@
 
                 </tr>
 
-                <tr class="table-row">
-
-                  <td class="table-data">
-                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
-                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
-                    </button>
-                  </td>
-
-                  <th class="table-data rank" scope="row">3</th>
-
-                  <td class="table-data">
-                    <div class="wrapper">
-                      <img src="./assets/images/WhatsApp_Image_2024-08-17_at_5.26.37_PM-removebg-preview.png" width="20" height="20" alt="Bitcoin logo" class="img">
-
-
-                      <h3>
-                        <a href="#" class="coin-name">Watch 3 Video</a>
-                      </h3>
-                    </div>
-                  </td>
-
-                  <td class="table-data last-price">+2000</td>
-
-              
-<!-- 
-                  <td class="table-data market-cap">$880,423,640,582</td> -->
-
-                  <td class="table-data">
-                    <img src="./assets/images/WhatsApp_Image_2024-08-17_at_5.02.51_PM-removebg-preview.png" width="70" height="20" alt="profit chart" class="chart bronze-filter">
-                  </td>
-                  
-
-                  <td class="table-data">
-                    <button class="btn btn-outline">Play <strong id="xo">to Earn</strong> </button>
-                  </td>
-
-                </tr>
-
-                <tr class="table-row">
-
-                  <td class="table-data">
-                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
-                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
-                    </button>
-                  </td>
-
-                  <th class="table-data rank" scope="row">4</th>
-
-                  <td class="table-data">
-                    <div class="wrapper">
-                      <img src="./assets/images/WhatsApp_Image_2024-08-17_at_5.26.37_PM-removebg-preview.png" width="20" height="20" alt="Bitcoin logo" class="img">
-
-
-                      <h3>
-                        <a href="#" class="coin-name">Stay over 10 minutes on the platform</a>
-                      </h3>
-                    </div>
-                  </td>
-
-                  <td class="table-data last-price">+5,000</td>
-
             
-<!-- 
-                  <td class="table-data market-cap">$880,423,640,582</td> -->
-
-                  <td class="table-data">
-                    <img src="./assets/images/WhatsApp_Image_2024-08-17_at_5.02.51_PM-removebg-preview.png" width="70" height="20" alt="profit chart" >
-                  </td>
-                  
-           
-
-                  <td class="table-data">
-                    <button class="btn btn-outline">Play <strong id="xo">to Earn</strong> </button>
-                  </td>
-
-                </tr>
-
-                <tr class="table-row">
-
-                  <td class="table-data">
-                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
-                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
-                    </button>
-                  </td>
-
-                  <th class="table-data rank" scope="row">5</th>
-
-                  <td class="table-data">
-                    <div class="wrapper">
-                      <img src="./assets/images/WhatsApp_Image_2024-08-17_at_5.26.37_PM-removebg-preview.png" width="20" height="20" alt="Bitcoin logo" class="img">
-
-
-                      <h3>
-                        <a href="#" class="coin-name">Join a new community</a>
-                      </h3>
-                    </div>
-                  </td>
-
-                  <td class="table-data last-price">+2,000</td>
-
-              
-<!-- 
-                  <td class="table-data market-cap">$880,423,640,582</td> -->
-
-                  <td class="table-data">
-                    <img src="./assets/images/WhatsApp_Image_2024-08-17_at_5.02.51_PM-removebg-preview.png" width="70" height="20" alt="profit chart" class="chart silver-filter">
-                  </td>
-                  
-
-                  <td class="table-data">
-                    <button class="btn btn-outline">Play <strong id="xo">to Earn</strong> </button>
-                  </td>
-
-                </tr>
-
-                <tr class="table-row">
-
-                  <td class="table-data">
-                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
-                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
-                    </button>
-                  </td>
-
-                  <th class="table-data rank" scope="row">6</th>
-
-                  <td class="table-data">
-                    <div class="wrapper">
-                      <img src="./assets/images/WhatsApp_Image_2024-08-17_at_5.26.37_PM-removebg-preview.png" width="20" height="20" alt="Bitcoin logo" class="img">
-
-
-                      <h3>
-                        <a href="#" class="coin-name">Follow our Instagram page </a>
-                      </h3>
-                    </div>
-                  </td>
-
-                  <td class="table-data last-price">+2,000</td>
-
-              
-<!-- 
-                  <td class="table-data market-cap">$880,423,640,582</td> -->
-
-           
-                  <td class="table-data">
-                    <img src="./assets/images/WhatsApp_Image_2024-08-17_at_5.02.51_PM-removebg-preview.png" width="70" height="20" alt="profit chart" class="chart bronze-filter">
-                  </td>
-              
-                                    
-
-                  <td class="table-data">
-                    <button class="btn btn-outline">Play <strong id="xo">to Earn</strong> </button>
-                  </td>
-
-                </tr>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
        
 
@@ -876,240 +895,18 @@
 
 
 
-      <!-- 
-        - #APP
-      -->
-
-      <!-- <section class="section app" aria-label="app" data-section>
-        <div class="container">
-
-          <div class="app-content">
-
-            <h2 class="h2 section-title">Free Your Money & Invest With Confident</h2>
-
-            <p class="section-text">
-              With Cryptor Trade, you can be sure your trading skills are matched
-            </p>
-
-            <ul class="section-list">
-
-              <li class="section-item">
-                <div class="title-wrapper">
-                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
-
-                  <h3 class="h3 item-title">Buy, Sell, And Trade On The Go</h3>
-                </div>
-
-                <p class="item-text">
-                  Manage Your Holdings From Your Mobile Decive
-                </p>
-              </li>
-
-              <li class="section-item">
-                <div class="title-wrapper">
-                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
-
-                  <h3 class="h3 item-title">Take Control Of Your Wealth</h3>
-                </div>
-
-                <p class="item-text">
-                  Rest Assured You (And Only You) Have Access To Your Funds
-                </p>
-              </li>
-
-            </ul>
-
-            <div class="app-wrapper">
-              <a href="#">
-                <img src="./assets/images/googleplay.png" width="135" height="40" loading="lazy"
-                  alt="get it on google play">
-              </a>
-
-              <a href="#">
-                <img src="./assets/images/appstore.png" width="120" height="40" loading="lazy"
-                  alt="download on the app store">
-              </a>
-            </div>
-
-          </div>
-
-          <div class="app-banner">
-            <img src="./assets/images/Untitled (6).png" width="218" height="26" loading="lazy" alt="app banner"
-              class="w-100">
-
-            <span class="span">Scan To Download</span>
-          </div>
-
-        </div>
-      </section>
-
-    </article>
-  </main> -->
-
-
-
-
-
   <!-- 
     - #FOOTER
   -->
 
   <footer class="footer">
 
-    <div class="footer-top" data-section>
-      <div class="container">
-
-        <div class="footer-brand">
-
-          <a href="#" class="logo">
-            <img src="./assets/images/letter-f (3).png" width="50" height="50" alt="Cryptex logo">
-            FipZone.
-          </a>
-
-          <h2 class="footer-title">Let's talk! 🤙</h2>
-
-          <a href="tel:+123456789101" class="footer-contact-link">+234 8159798054</a>
-
-          <a href="mailto:hello.fipzone@gmail.com" class="footer-contact-link">hello.fipzone@gmail.com</a>
-
-          <address class="footer-contact-link">
-            Lagos, Nigeria.
-          </address>
-
-        </div>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Products</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Spot</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Inverse Perpetual</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">USDT Perpetual</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Exchange</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Launchpad</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Binance Pay</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Services</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Buy Crypto</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Markets</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Tranding Fee</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Affiliate Program</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Referral Program</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">API</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Support</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">FipZone Learn</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Help Center</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">User Feedback</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Submit a request</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">API Documentation</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Trading Rules</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">About Us</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">About FipZone</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Authenticity Check</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Careers</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Business Contacts</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Blog</a>
-          </li>
-
-        </ul>
-
-      </div>
-    </div>
-
+    
     <div class="footer-bottom">
       <div class="container">
 
         <p class="copyright">
-          &copy; 2024 FipZone All Rights Reserved by <a href="#" class="copyright-link">FipZone inc.</a>
+          &copy; 2024 FipZone All Rights Reserved by <a href="https://chisomjnr.github.io/junior.com" target="_blank" class="copyright-link">FipZone inc.</a>
         </p>
 
         <ul class="social-list">
