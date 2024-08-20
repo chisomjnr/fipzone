@@ -211,7 +211,7 @@ body {
   font-family: poppins;
 }
 
-@media screen and (width < 930px) {
+@media (max-width: 780px) {
   .container__right {
     display: none;
   }
